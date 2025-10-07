@@ -1,4 +1,4 @@
-REDISTRICTING ANALYSIS: PENNSYLVANIA GERRYCHAIN\
+REDISTRICTING ANALYSIS: PENNSYLVANIA GERRYCHAIN ---> ChatGPT helped make this summary of the code into a README\
 ------------------------------------------------
 
 This Python script performs a redistricting analysis for **Pennsylvania** congressional districts using the **GerryChain** library. It serves two main purposes: comparing specific, pre-existing plans and analyzing the political characteristics of an ensemble of randomly generated plans.
