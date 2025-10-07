@@ -14,7 +14,6 @@
 #   - Two histogram plots: rep_wins_hist.png, efficiency_gap_hist.png
 
 # Imports
-import geopandas as gpd
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -24,10 +23,6 @@ import os
 # GerryChain imports
 from gerrychain import Graph, Partition
 from gerrychain.proposals import recom
-from gerrychain.constraints import contiguous
-from gerrychain.accept import always_accept
-
-
 
 # config
 PATH = "PA_VTDs.json"   # GerryChain JSON graph file
@@ -42,7 +37,6 @@ PLAN_CMP = "538CPCT__1"       # 538 Compactness-favoring plan column
 ENSEMBLE_SIZE = 100           # Number of districting plans to generate
 RECOM_EPSILON = 0.01          # Allowed population deviation (1%)
 STEPS_BETWEEN_SAMPLES = 2     # Minimum steps between saved plans
-
 
 
 # Compute Republican wins and efficiency gap for a given plan
@@ -241,7 +235,7 @@ def main():
         print(f"  {seats} seats: {count} plans")
 
     print("\nDone. Files produced: rep_wins_hist.png, efficiency_gap_hist.png")
-    print("Q1 results printed above.")
+    print("Question 1 results printed above.")
 
 
 # Entry point
